@@ -29,10 +29,15 @@ p.subtitle {
 }
 
 section {
-    padding: 30px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 35px 20px;
 }
 
-/* General cards */
+section h2 {
+    margin-bottom: 20px;
+}
+
 .card {
     background: #1e293b;
     padding: 20px;
@@ -41,13 +46,12 @@ section {
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
-/* BOOK CARD (new improved design) */
 .book-card {
     background: #1e293b;
     max-width: 320px;
     padding: 20px;
     border-radius: 15px;
-    margin: 20px auto;
+    margin: 15px auto 20px auto;
     text-align: center;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
@@ -59,7 +63,15 @@ section {
     margin-bottom: 15px;
 }
 
-/* Buttons */
+iframe {
+    width: 100%;
+    max-width: 700px;
+    height: 390px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
 button {
     background: #22c55e;
     border: none;
@@ -76,66 +88,28 @@ button:hover {
 
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 25px;
     color: #94a3b8;
 }
-section h2 {
-    margin-bottom: 15px;
-}
 
-.book-card {
-    margin: 15px auto 20px auto;
+@media (max-width: 600px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    .book-card {
+        max-width: 90%;
+    }
+
+    .book-card img {
+        width: 180px;
+    }
+
+    iframe {
+        height: 220px;
+    }
 }
 </style>
-</head>
-
-<body>
-
-<header>
-    <h1>David Bulambo Hub</h1>
-    <p class="subtitle">Books • Apps • Caregiving Journey</p>
-</header>
-
-<section>
-    <h2>About Me</h2>
-    <div class="card">
-        <p>
-        I am a father, caregiver, author, and app creator.  
-        This platform shares my journey raising autistic children,  
-        along with the tools and books I create to support others.
-        </p>
-    </div>
-</section>
-
-<section>
-  <h2>My Books</h2>
-
-  <div class="book-card">
-    <img src="BookCover_1.png" alt="Prison Without Bars">
-
-    <h3>Prison Without Bars</h3>
-    <p>A real-life journey of raising children with autism.</p>
-
-    <a href="#" target="_blank">
-      <button>View on Amazon</button>
-    </a>
-  </div>
-
-</section>
-
-<section>
-    <h2>My Apps</h2>
-
-    <div class="card">
-        <h3>Security Analyst Trainer</h3>
-        <p>Learn cybersecurity concepts in a simple and practical way.</p>
-        <a href="#" target="_blank">
-            <button>Open App</button>
-        </a>
-    </div>
-
-</section>
-
 <section>
     <h2>Caregiving Videos</h2>
 
